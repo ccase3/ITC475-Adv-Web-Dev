@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    border-bottom: 20px solid #d3d3d3;
+}
+
+header.lightBlueBackground {
+    background-color: #add8e6;
+    padding: 40px;
+}
+
+img.mega-logo {
+    width: 35%;
+    position: relative;
+}
+
+.top-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top-navigation a {
+    text-decoration: none;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #000;
+    top: 0;
+    transition: top .5s, color .5s;
+    position: relative;
+}
+
+.top-navigation a:hover {
+    top: -10px;
+    color: #ffa500;
+}
+
+.intro {
+    margin: 30px 0;
+    padding: 0 10px;
+    width: 50%;
+}
+
+.lead-heading {
+    margin-bottom: 15px;
+}
+
+.travel-cards {
+    margin: 30px 0;
+}
+
+.travel-card {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.travel-card:hover {
+    animation: travelCards 2s;
+    color: white;
+    background: black;
+}
+
+.travel-card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.travel-card:hover a {
+    color: #fff;
+}
+
+.travel-img {
+    width: 100%;
+}
+
+.travel-heading {
+    margin: 30px 0 15px;
+}
+
+.price {
+    color: grey;
+}
+
+.price-savings {
+    color: green;
+}
+
+.copyright {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.fa-moon {
+    visibility: hidden;
+}
+
+.fa-sun {
+    visibility: hidden;
+}
+
+.greeting-wrap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#time-container {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#icon-image {
+    width: 30px !important;
+    margin-left: 20px !important;
+}
+
+@keyframes travelCards {
+    from {
+        background-color: white;
+        color: black;
+        border-width: 1px;
+        padding: 15px;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border-width: 5px;
+        padding: 11px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .travel-cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .travel-card {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    img.mega-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-navigation {
+        background-color: #000;
+
+    }
+
+    .top-navigation a {
+        color: #fff;
+    }
+
+    .top-navigation a:hover {
+        transition: color .5s;
+        top: 0;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+}
